@@ -1,0 +1,304 @@
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Nanum Gothic", sans-serif;
+}
+
+header {
+  width: 100%;
+  height: 120px;
+  background-color: #000;
+  position: relative;
+}
+
+header .main_title {
+  margin: 0;
+  width: 1080px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  padding-left: 40px;
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+/* main */
+
+main {
+  width: 1080px;
+  padding: 40px;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+/* nav */
+
+main nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+main nav span {
+  display: inline-block;
+  border: 1px solid #d1d1d1;
+  line-height: 33px;
+  width: auto;
+  height: 33px;
+
+  flex: 1;
+
+  font-size: 16px;
+  text-align: center;
+}
+
+main nav span:hover {
+  border-color: #454545;
+  font-weight: bold;
+}
+
+.nav_table {
+  margin-right: 14px;
+}
+.nav_form {
+  margin-right: 14px;
+}
+
+/* section */
+
+.section_title {
+  margin: 0;
+  font-size: 20px;
+  font-weight: bold;
+  border-bottom: 1px solid #454545;
+
+  padding: 45px 0 20px;
+}
+
+section article {
+  margin-top: 30px;
+  border: 1px solid #d1d1d1;
+}
+
+.article_title {
+  margin: 0;
+  font-size: 16px;
+  color: #333;
+  font-weight: bold;
+  line-height: 46px;
+
+  padding-left: 15px;
+  background-color: #f7f7f7;
+  height: 46px;
+
+  border-bottom: 1px solid #d1d1d1;
+}
+
+.article_content {
+  padding: 30px;
+
+  font-size: 12px;
+}
+
+.article_content h4 {
+  padding: 0;
+  margin: 0 0 15px 0;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/* table */
+
+.section_table .table_clothes {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 250px;
+  border: 1px solid #e4e4e4;
+  border-collapse: collapse;
+  text-align: center;
+  color: #555;
+
+  margin-bottom: 50px;
+}
+
+.section_table .table_clothes th {
+  font-weight: 900;
+}
+
+.section_table .table_clothes th,
+.section_table .table_clothes td {
+  border: 1px solid #e4e4e4;
+}
+
+.section_table .table_refund {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 180px;
+  border-top: 2px solid #a5a5a5;
+  border-bottom: 1px solid #e4e4e4;
+  border-collapse: collapse;
+  text-align: center;
+  color: #555;
+}
+
+.section_table .table_refund .nodata {
+  width: 80px;
+}
+
+.section_table .table_refund .table_num {
+  width: 200px;
+  text-align: right;
+}
+
+.section_table .table_refund .table_head {
+  background-color: #fbfbfb;
+  border-bottom: 1px solid #e4e4e4;
+}
+
+.section_table .table_refund .table_footer {
+  font-weight: bolder;
+  border-top: 1px solid #a5a5a5;
+}
+
+/* form */
+
+.section_form form {
+  border: 1px solid #e4e4e4;
+  background-color: #fbfbfb;
+  padding: 20px;
+}
+
+.section_form form h4 {
+  margin-bottom: 10px;
+}
+
+.section_form form .text {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 35px;
+  font-size: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #e4e4e4;
+}
+
+.section_form form .birthday {
+  display: flex;
+  justify-content: space-between;
+}
+
+.section_form form .birthday input {
+  flex: 1;
+  margin-right: 8px;
+  height: 30px;
+  margin-bottom: 20px;
+  border-width: 1px;
+  border-radius: 5px;
+  font-size: 12px;
+  border: 1px solid #e4e4e4;
+}
+
+.section_form form .birthday input::placeholder {
+  color: #000;
+}
+
+.section_form form .sexes {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.section_form form .sexes input {
+  margin: 0 5px 0 0;
+  padding: 0;
+  border: 1px solid #e4e4e4;
+}
+
+.section_form form .sexes label {
+  padding-right: 80px;
+}
+
+.section_form form .phonenum {
+  display: flex;
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+.section_form form .phonenum input {
+  width: 100%;
+  margin-right: 10px;
+  border: 1px solid #e4e4e4;
+}
+
+.section_form form .phonenum button {
+  border: 1px solid #08a600;
+  background-color: #4ec53d;
+  color: #fff;
+  width: 150px;
+  height: 35px;
+}
+
+.section_form form .hobby {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  padding-right: 80px;
+  margin-bottom: 20px;
+}
+
+.section_form form .hobby li {
+  list-style: none;
+}
+
+.section_form form textarea {
+  border: 1px solid #e4e4e4;
+  width: 100%;
+  height: 130px;
+  margin-bottom: 10px;
+}
+
+.section_form form .submitBtn {
+  width: 100%;
+  height: 40px;
+  border: 1px solid #08a600;
+  background-color: #4ec53d;
+  font-size: 16px;
+  color: #fff;
+}
+
+/* list section */
+
+/* footer */
+
+footer {
+  width: 100%;
+  border-top: 1px solid #d1d1d1;
+  text-align: center;
+  padding-top: 25px;
+}
+
+address {
+  font-style: unset;
+  width: 100%;
+  font-size: 12px;
+  color: #999;
+}
+
+footer div {
+  width: 100%;
+  font-size: 12px;
+  margin-top: 8px;
+}
