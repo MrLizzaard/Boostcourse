@@ -6054,41 +6054,53 @@ var Fade = /*#__PURE__*/function (_Highway$Transition) {
   }
 
   _createClass(Fade, [{
-    key: "in",
-    value: function _in(_ref) {
+    key: "out",
+    value: function out(_ref) {
       var from = _ref.from,
-          to = _ref.to,
           done = _ref.done;
 
       var tl = _gsap.gsap.timeline();
 
-      tl.fromTo(to, 0.5, {
+      tl.to(from, {
+        duration: 0.3,
+        opacity: 0,
+        onComplete: function onComplete() {
+          done();
+        }
+      });
+    }
+  }, {
+    key: "in",
+    value: function _in(_ref2) {
+      var from = _ref2.from,
+          to = _ref2.to,
+          done = _ref2.done;
+
+      var tl = _gsap.gsap.timeline();
+
+      tl.fromTo(to, {
         left: "-100%",
         top: "50%"
       }, {
+        duration: 0.2,
         left: "0%"
       }) //
       .fromTo(to, {
         height: "2vh"
       }, {
+        duration: 0.5,
         height: "90vh",
         top: "10%",
         onComplete: function onComplete() {
           from.remove();
           done();
         }
-      }).fromTo(to.children[0], 1.5, {
+      }).fromTo(to.children[0], {
         opacity: 0
       }, {
+        duration: 2,
         opacity: 1
       });
-    }
-  }, {
-    key: "out",
-    value: function out(_ref2) {
-      var from = _ref2.from,
-          done = _ref2.done;
-      done();
     }
   }]);
 
